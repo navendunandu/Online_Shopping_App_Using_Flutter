@@ -45,6 +45,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
           child: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Form(
+          key: _formKey,
             child: SingleChildScrollView(
           child: Column(
             children: [

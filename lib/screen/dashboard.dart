@@ -1,5 +1,6 @@
 
 // import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class Dashboard extends StatelessWidget {
@@ -7,6 +8,19 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaff;
+    return AppBar(
+      backgroundColor: Colors.blue,
+      actions: [
+        IconButton(
+          icon: const Icon(
+            Icons.account_circle_rounded,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            // Implement the action for "Bag" button here
+          },
+        ),
+      ],
+    );
   }
 }
